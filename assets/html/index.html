@@ -13,49 +13,121 @@
     <header>
         <menu>
             <nav>
-                <button>Parlons de moi</button>
-                <button>Mes Compétences</button>
-                <button>Mes Projets</button>
+                <button type="button" aria-label="Parlons de moi">Parlons de moi</button>
+                <button type="button" aria-label="Mes compétences">Mes Compétences</button>
+                <button type="button" aria-label="Mes projets">Mes Projets</button>
             </nav>
         </menu>
     </header>
 
-    <div class="content">
+    <div class="container">
+    <section>
         <h2>Parlons de moi :</h2>
         <div id="present">
             <p>Actuellement en première année de Bachelor Devellopeur Web à l'ecole Digital Campus, 
-                j'aimerai me specialisé dans l'UX design a la fin de cette année.
+                j'aimerai me specialisé dans <strong>l'UX design</strong> a la fin de cette année.
                 Pour présenter mon parcours de maniére rapide, avant de venir a Digital Campus j'ai fait un Bac pro MELEC
                 (Métier de l'electricité et des ses environements connectées) mais a l'obtention de mon bac j'ai décider 
-                de m'orienter vers un autre domaine, j'ai donc choisis le devellopement web car c'est un domaine vaste
+                de m'orienter vers un autre domaine, j'ai donc choisis le <strong>devellopement web</strong> car c'est un domaine vaste
                 et ces aussi un defis pour ma part car je n'ai aucune connaisssances de bases dans ce domaine.
 
                 En ce qui concerne ma vie personnelle j'aime beaucoup le sport en général et je suis surtout un grand fan de Basket ( Vive les Warriors !! ) je regarde aussi beaucoup de F1 et de FootBall.
             </p>
         </div>
+    </section>
 
-        <div id="comp">
-            <ul>
-                <li>HTML/CSS/JS</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>WordPress</li>
-                <li>Adobe</li>
-                <li>Photoshop</li>
-                <li>Git</li>
-                <li>VueJs</li>
-            </ul>
+        <div id="tab">
+            <table>
+                <thead>
+                    <tr>
+                       <th scope="col">Web</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML/CSS</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>VueJS</td>
+                    </tr>
+                    <tr>
+                        <td>PHP</td>
+                    </tr>
+                    <tr>
+                        <td>JQuery</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                       <th scope="col">Base de données</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MySQL</td>
+                    </tr>
+                    <tr>
+                        <td>PDO</td>
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+                       <th scope="col">Autres</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Figma</td>
+                    </tr>
+                    <tr>
+                        <td>InDesign</td>
+                    </tr>
+                    <tr>
+                        <td>Photoshop</td>
+                    </tr>
+                    <tr>
+                        <td>Excel</td>
+                    </tr>
+                    <tr>
+                        <td>PowerPoint</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
-    <h2>Mes projets réalissé au cours de l'année</h2>
-    <div id="projet">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-    </div>
+    <section>
+        <h2>Mes projets réalissé au cours de l'année :</h2>
+        <div id="img">
+            <img src="" alt="projet 1">
+            <button type="button" aria-label="Cliquer pour installer le projet 1">Télecharger le projet</button>
+            <img src="" alt="projet 2">
+            <button type="button" aria-label="Cliquer pour installer le projet 2">Télecharger le projet</button>
+            <img src="" alt="projet 3">
+            <button type="button" aria-label="Cliquer pour installer le projet 3">Télecharger le projet</button>
+            <p>Pour plus d'informations sur les projets effectuer, vous pouvez me contacter via le formulaire de contact en bas de page</p>
+        </div>
+    </section>
 
 
+
+    <footer>
+        <form action="contact.php" method="post">
+            <label for="email">Votre email</label>
+            <input type="text" name="email" value="" id="email"/>
+
+            <label for="prenom">Votre prénom</label>
+            <input type="text" name="prenom" value="" id="prenom" />
+
+            <label for="message">Votre message</label>
+            <textarea name="message" cols="40" rows="20" id="message"></textarea>
+
+            <input type="submit" name="envoyer" value="Envoyer"/>
+        </form>
+    </footer>
 
 
     <script src="script.js"></script>
